@@ -1,9 +1,10 @@
 use project_one;
 SET SQL_SAFE_UPDATES = 0;
 
+#full data
 DROP TABLE IF EXISTS full_data;
 CREATE TABLE full_data (c_id Integer PRIMARY KEY AUTO_INCREMENT) 
-as select 
+AS SELECT 
 	`BuildingType`, 
 	`Grade`,
   	`LandUse`,
@@ -11,8 +12,20 @@ as select
   	`PropertyCenterPoint`,
  	`HeatType`,
  	`YearBlt`
-from burlington;
+FROM burlington;
 
-delete from full_data
-where `YearBlt`  = 0;
-select * from full_data;
+#contact data
+DROP TABLE IF EXISTS contact;
+CREATE TABLE contact (aid INTEGER PRIMARY KEY AUTO_INCREMENT)
+AS SELECT
+	`SpanNumber`,
+	`StreetNumber`,
+	`StreetName`,
+	`CuO1LastName`
+FROM burlington;
+
+DELETE FROM full_data
+WHERE `YearBlt`  = 0;
+
+SELECT * FROM full_data;
+SELECT * FROM contact;
