@@ -6,11 +6,11 @@ CREATE TABLE full_data (c_id Integer PRIMARY KEY AUTO_INCREMENT)
 as select 
 	`BuildingType`, 
 	`Grade`,
-  `LandUse`,
+  	`LandUse`,
 	`CurrentBuildingValue`,
-  `PropertyCenterPoint`,
-  `HeatType`,
-  `YearBlt`
+  	`PropertyCenterPoint`,
+ 	 `HeatType`,
+ 	 `YearBlt`
 from burlington;
 
 delete from full_data
