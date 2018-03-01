@@ -16,7 +16,7 @@ FROM
 	`full_data` rs
 ORDER BY 
 	 `CurrentBuildingValue` DESC
-# Notes -- Of course the condition of the house affects the house value. It also depends on the year the house was build on. 
+# see report file for more explanation -- the condition of the house affects the house value. It also depends on the year the house was build on. 
 
 #----Question 5: What heating type was most popular in each decade? ----#
 
