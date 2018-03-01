@@ -9,8 +9,8 @@ as select
   	`LandUse`,
 	`CurrentBuildingValue`,
   	`PropertyCenterPoint`,
- 	 `HeatType`,
- 	 `YearBlt`
+ 	`HeatType`,
+ 	`YearBlt`
 from burlington;
 
 delete from full_data
