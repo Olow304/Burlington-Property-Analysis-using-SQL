@@ -40,6 +40,13 @@ GROUP BY
 ----########################################################################
 
 #----Question 4: How does the condition(grade) affects the house value? this needs join clause
+SELECT 
+	g.Grade, c.CurrentValue
+FROM 
+	grade_data AS g
+JOIN 
+	current_value c on g.AccountNumber = c.AccountNumber;
+----########################################################################
 
 #----Question 5: What heating-type was most popular in each decade? ----#
 
