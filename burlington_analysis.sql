@@ -49,5 +49,15 @@ JOIN
 ----########################################################################
 
 #----Question 5: What heating-type was most popular in each decade? ----#
-
-
+DELETE FROM
+	type_data
+WHERE
+	`YearBlt` = 0
+ORDER BY
+	`YearBlt` ASC;
+SELECT 
+	(floor(y.YearBlt /10) * 10) AS decade, y.HeatType AS heat
+FROM 
+	type_data AS y
+GROUP BY 
+	floor(y.YearBlt / 10);
