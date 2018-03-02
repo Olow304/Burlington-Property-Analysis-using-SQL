@@ -8,7 +8,7 @@ SELECT
 FROM
 	build_type b
 JOIN 
-current_value c ON b.AccountNumber = c.AccountNumber;
+	current_value c ON b.AccountNumber = c.AccountNumber;
 ----########################################################################
 
 #----Question 2: How does year-built in affect house value? ----#
